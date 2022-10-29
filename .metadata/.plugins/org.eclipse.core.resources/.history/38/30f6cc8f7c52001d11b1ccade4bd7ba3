@@ -1,0 +1,21 @@
+package com.maniraj.userservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.maniraj.userservice.entity.User;
+import com.maniraj.userservice.service.UserService;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+	@Autowired
+	private UserService userService;
+	
+	public User saveUser(User user) {
+		
+		return userService.saveUser(user);
+	}
+}

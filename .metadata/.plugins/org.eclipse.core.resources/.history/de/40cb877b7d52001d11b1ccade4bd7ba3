@@ -1,0 +1,5 @@
+package com.maniraj.userservice.VO;
+
+public class ResponseTemplateVO {
+
+}

@@ -1,0 +1,5 @@
+package com.maniraj.userservice.entity;
+
+public class User {
+
+}

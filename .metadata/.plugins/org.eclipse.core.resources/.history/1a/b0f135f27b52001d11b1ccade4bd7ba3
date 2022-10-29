@@ -1,0 +1,5 @@
+package com.maniraj.userservice.service;
+
+public class UserService {
+
+}

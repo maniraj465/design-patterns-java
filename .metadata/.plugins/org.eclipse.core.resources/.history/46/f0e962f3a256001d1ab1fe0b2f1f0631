@@ -1,0 +1,37 @@
+package com.practice.designpatterns.singleton;
+
+public class ThreadSafeSingleton {
+	private static ThreadSafeSingleton instance;
+
+	private ThreadSafeSingleton() {
+	}
+
+	public static ThreadSafeSingleton getInstanceEagerInitialized() {
+		return instance;
+	}
+
+	public static ThreadSafeSingleton getInstanceLazyInitialized() {
+		if (instance == null) {
+			instance = new ThreadSafeSingleton();
+		}
+		return instance;
+	}
+
+	public static synchronized ThreadSafeSingleton getInstanceThreadSafe() {
+		if (instance == null) {
+			instance = new ThreadSafeSingleton();
+		}
+		return instance;
+	}
+
+	public static ThreadSafeSingleton getInstanceUsingDoubleLocking() {
+		if (instance == null) {
+			synchronized (ThreadSafeSingleton.class) {
+				if (instance == null) {
+					instance = new ThreadSafeSingleton();
+				}
+			}
+		}
+		return instance;
+	}
+}

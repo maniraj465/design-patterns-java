@@ -1,0 +1,8 @@
+package com.maniraj.userservice.VO;
+
+public class Department {
+	private Integer departmentId;
+	private String departmentName;
+	private String departmentCode;
+	private String departmentAddress;
+}
