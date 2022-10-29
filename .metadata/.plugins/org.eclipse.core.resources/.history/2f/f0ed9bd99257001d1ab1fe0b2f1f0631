@@ -1,0 +1,11 @@
+package com.practice.designpatterns.factory;
+
+public class Vehicle {
+	protected String type;
+	protected String fuel;
+	protected String wheels;
+	
+	protected void run(String type) {
+		System.out.println(type + " is running.");
+	}
+}

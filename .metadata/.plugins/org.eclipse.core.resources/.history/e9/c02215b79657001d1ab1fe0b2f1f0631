@@ -1,0 +1,7 @@
+package com.practice.designpatterns.factory;
+
+public class Car extends Vehicle{
+	public Car(String type, String fuel, String wheels) {
+		super(type, fuel, wheels);
+	}
+}

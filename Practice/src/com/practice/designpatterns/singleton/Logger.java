@@ -23,7 +23,7 @@ public class Logger {
 			instance = new Logger();
 		}
 		return instance;
-	}
+	} 	
 
 	public static Logger getInstanceUsingDoubleLocking() {
 		if (instance == null) {

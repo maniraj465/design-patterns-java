@@ -1,0 +1,42 @@
+package com.practice.designpatterns.factory;
+
+public class Vehicle {
+	protected String type;
+	protected String fuel;
+	protected String wheels;
+
+	protected Vehicle(String type, String fuel, String wheels) {
+		super();
+		this.type = type;
+		this.fuel = fuel;
+		this.wheels = wheels;
+	}
+
+	protected String getType() {
+		return type;
+	}
+
+	protected void setType(String type) {
+		this.type = type;
+	}
+
+	protected String getFuel() {
+		return fuel;
+	}
+
+	protected void setFuel(String fuel) {
+		this.fuel = fuel;
+	}
+
+	protected String getWheels() {
+		return wheels;
+	}
+
+	protected void setWheels(String wheels) {
+		this.wheels = wheels;
+	}
+
+	protected void run(String type) {
+		System.out.println(type + " is running.");
+	}
+}
