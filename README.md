@@ -1,1 +1,1 @@
-# eclipse-workspace
+# Hands-On Design Patterns with Java
